@@ -1,0 +1,223 @@
+.details{
+    background-image: url('../../images/background3a.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    min-height: 1000px;
+    display:flex;
+    flex-direction: column;
+}
+
+.marcDetail{   
+    width: 98%;
+    margin-top: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: space-around;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    box-shadow: 6px 6px 10px 2px rgb(40, 41, 92);
+    background-color: rgb(255, 255, 255, 0.85);
+}
+
+.marcoInt{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.marcSubInt{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    align-items: center;
+    align-content: center;
+}
+
+.marcSubInt1{
+    width: 15%;
+}
+
+.marcSubInt2{
+    width: 40%;
+}
+
+.detailImg{
+    height: auto;
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px 1px rgb(54, 75, 190);
+}
+
+.recipeName{
+    font-size: 30px; 
+    color: #fdfdfd;
+    font-style: italic;
+    font-weight: 700;    
+    text-shadow: 3px 2px 3px rgb(5, 5, 5);
+}
+
+.deTexts{
+    text-align: center;
+    font-family: sans-serif;    
+    color:black;
+    font-size: 18px;    
+}
+
+.deTexts1{
+    margin: 0%;
+    padding: 0%;
+    font-family: sans-serif;    
+    color:black;
+    font-size: 18px;
+}
+
+.ddsh1{
+
+    padding: 0px;
+    text-align: justify;
+}
+
+.ddsh2{
+    padding: 0px;
+
+    text-align: justify;
+}
+
+.ddsh3{
+    background-color: white;
+    width: auto;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    border: solid gray;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 3px 3px 5px 1px rgb(125, 125, 126);
+}
+
+.contdishes{
+    border: solid gray;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 3px 3px 5px 1px rgb(125, 125, 126);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-right: 15px;
+}
+
+.dishestxt{
+    font-family: sans-serif;    
+    color:black;
+    font-size: 16px;
+    margin: 5px;
+    overflow-wrap: break-word;
+}
+
+.contdiets{
+    border: solid gray;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 3px 3px 5px 1px rgb(125, 125, 126);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.dietstxt{
+    font-family: sans-serif;    
+    color:black;
+    font-size: 16px;
+    margin: 5px;
+    overflow-wrap: break-word;
+}
+
+.contSumary{
+    border: solid gray;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 3px 3px 5px 1px rgb(125, 125, 126, 0.9);
+    display: flex;
+    flex-direction: column;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.sumarytxt{
+    font-family: sans-serif;    
+    color:black;
+    font-size: 12px;
+    margin: 10px;
+}
+
+.contSteps{
+    border: solid gray;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 3px 3px 5px 1px rgb(125, 125, 126, 0.9);
+    display: flex;
+    flex-direction: column;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.stepstxt{
+    font-family: sans-serif;    
+    color:black;
+    font-size: 14px;
+    margin: 10px;
+}
+
+.simbolScore{
+    height: 30px;
+    text-align: center;
+    font-family: sans-serif;
+    color: white;
+    -webkit-text-stroke: 2px red;
+    align-items: center;
+    align-content: center;
+    padding-bottom: 15px;
+    margin-left: 10px; 
+}
+
+.scoreDetal{
+    height: 30px;
+    text-align: center;
+    font-family: sans-serif;    
+    color: black;
+    align-items: center;
+    align-content: center;
+    padding-top: 1px;
+    margin-right: 10px;
+}
+
+.separator{
+    color: white;
+}
+
+.backButton{
+    color: black;
+    background-color: rgb(231, 218, 218);
+    font-size: 17px;
+    text-align: center;
+    padding: 10px 25px;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 3px 5px 1px rgb(3, 158, 185);
+    cursor: pointer;
+}
+
+.backButton:hover {
+    box-shadow: 1px 2px 1px rgb(3, 158, 185);
+}

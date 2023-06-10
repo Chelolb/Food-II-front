@@ -1,0 +1,113 @@
+.home{
+    background-image: url('../../images/background2a.jpg'); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: rgba(65, 65, 65, 0.7);
+    background-size:auto;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.grupo0{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.grupo1{
+    width: 45%; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.addButton {
+    color: rgb(0, 0, 0);
+ 
+    font-size: 17px;
+    text-align: center;
+    padding: 10px 25px;
+    margin: 0px;
+
+	box-shadow: 3px 5px 1px rgb(135, 135, 135);
+    border: none;
+	border-radius: 7px;
+	background-color: rgb(231, 218, 218);
+
+    cursor: pointer;
+}
+
+.addButton:hover {
+    box-shadow: 1px 1px 1px rgb(135, 135, 135);
+}
+
+.refreshButton {
+    color: rgb(0, 0, 0);
+ 
+    font-size: 17px;
+    text-align: center;
+    padding: 10px 25px;
+    margin: 0px;
+
+	box-shadow: 3px 5px 1px rgb(135, 135, 135);
+    border: none;
+	border-radius: 7px;
+	background-color: rgb(231, 218, 218);
+
+    cursor: pointer;
+}
+
+.refreshButton:hover {
+    box-shadow: 1px 1px 1px rgb(135, 135, 135);
+}
+
+.titleHome{
+    color: white;
+    font-size: 45px;
+    font-style: italic;
+    font-weight: 700;  
+    text-shadow: 3px 2px 3px rgb(8, 8, 8);
+    margin: 10px;
+}
+
+.allrecipes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 25px;
+}
+
+.linkRecetas{
+    text-decoration-line: none;
+}
+
+.loading{
+    margin-top: 100px;
+    background-color: rgba(245, 208, 139, 0.6);
+    box-shadow: -10px -10px 10px 10px rgb(247, 222, 140, 0.6);
+    width: 180px;
+    height: 140px;
+    vertical-align: center;
+    border-radius: 50%;
+    padding: 75px;
+}
+
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
