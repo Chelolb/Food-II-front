@@ -1,11 +1,11 @@
 import axios from 'axios';
-const ROUTE = 'http://localhost:3001'
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
 
 
 export function getRecipes() {
     return async function(dispatch) {
         try{
-            var json = await axios.get(ROUTE + '/recipes/name/'); // obtiene recetas en general
+            var json = await axios.get(BACKEND_URL + '/recipes/name/'); // obtiene recetas en general
         
             return dispatch({
                 type: 'GET_RECIPES', 
@@ -21,7 +21,7 @@ export function getRecipes() {
 export function getRecipeByName(name){   // obtiene recetas por nombre
     return async function(dispatch){
         try{
-            var json = await axios.get(ROUTE + '/recipes/name?name=' + name);
+            var json = await axios.get(BACKEND_URL + '/recipes/name?name=' + name);
 
             return dispatch ({
                 type: 'GET_RECIPE_BY_NAME',
@@ -36,8 +36,9 @@ export function getRecipeByName(name){   // obtiene recetas por nombre
 
 export function getDiets() {        ; // obtiene dietas 
     return async function(dispatch) {
+        console.log(BACKEND_URL)
         try{
-            var info = await axios.get(ROUTE + '/diets', {})   
+            var info = await axios.get(BACKEND_URL + '/diets', {})   
 
             return dispatch({
                 type: 'GET_DIETS', 
@@ -61,7 +62,7 @@ export function cleanDetail(){
 export function postRecipe(payload){            // guarda receta en bd
     return async function(dispatch) {
         try{
-            var response = await axios.post(ROUTE + '/recipe', payload);  
+            var response = await axios.post(BACKEND_URL + '/recipe', payload);  
             console.log(response)
             return response; 
         }
@@ -95,7 +96,7 @@ export function orderByScore(payload){
 export function getRecipeDetail(id){    // obtiene detalles
     return async function(dispatch){
         try{
-            var json = await axios.get(ROUTE + '/recipes/detail/' + id);
+            var json = await axios.get(BACKEND_URL + '/recipes/detail/' + id);
 
             return dispatch ({
                 type: 'GET_RECIPE_DETAIL',
@@ -111,7 +112,7 @@ export function getRecipeDetail(id){    // obtiene detalles
 export function getIpClient(){      // obtiene IP cliente
     return async function(dispatch){
         try {
-            var response = await axios.get(ROUTE + '/ip', {});
+            var response = await axios.get(BACKEND_URL + '/ip', {});
 
             return dispatch({
                 type: 'GET_IP', 
