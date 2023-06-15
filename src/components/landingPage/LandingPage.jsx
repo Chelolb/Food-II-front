@@ -6,7 +6,7 @@ import './LandingPage.css';
 
 
 export default function LandingPage0(){
-    const [isLoading, setLoading] = useState(true);
+    //const [isLoading, setLoading] = useState(true);
     const [data, setData] = useState([]);
     console.log(data);
     const dispatch = useDispatch()
@@ -17,7 +17,7 @@ export default function LandingPage0(){
         .then((response) => response.json())
         .then((json) => setData(json))
         .catch((error) => console.error(error))
-        .finally(() => setLoading(false));
+        //.finally(() => setLoading(false));
     }, [])
 
     function HandleStart(e) {   // Botón Comenzar
