@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-// import { getRecipes, getDiets, getIpClient} from '../../actions/index.js'
-// import { useDispatch, useSelector } from "react-redux";
+import { sendDataUser } from '../../actions/index.js'
+import { useDispatch } from "react-redux";
 import { useHistory } from 'react-router-dom'
 import './LandingPage.css';
 
@@ -9,7 +9,7 @@ export default function LandingPage0(){
     const [isLoading, setLoading] = useState(true);
     const [data, setData] = useState([]);
     console.log(data);
-    // const dispatch = useDispatch()
+    const dispatch = useDispatch()
     const history = useHistory()
 
     useEffect(() => {
@@ -23,7 +23,7 @@ export default function LandingPage0(){
     function HandleStart(e) {   // Botón Comenzar
         e.preventDefault();
 
-        //dispatch(getIpClient());    // lanza peticion de IP cliente
+        dispatch(sendDataUser(data));    // envía data user
 
         history.push('/home/')
 

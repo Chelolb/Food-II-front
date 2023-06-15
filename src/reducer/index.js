@@ -35,8 +35,8 @@ function rootReducer (state = initialState, action){
             case 'FILTER_BY_DIET':
                 const allRecipes = state.allRecipes    // filtro sobre la "copia NO filtrada"
                 const dietFiltered = action.payload === 'todas'
-                                        ? allRecipes 
-                                        : allRecipes.filter(r => r.diets?.some(d => d.toLowerCase() === action.payload.toLowerCase()))
+                        ? allRecipes 
+                        : allRecipes.filter(r => r.diets?.some(d => d.toLowerCase() === action.payload.toLowerCase()))
                 return{
                     ...state,
                     recipes: dietFiltered
@@ -105,6 +105,10 @@ function rootReducer (state = initialState, action){
                     ...state,
                     ipClient: action.payload
                 }
+                case 'SEND_DATA':
+                    return{
+                        ...state,
+                    }
             default:
                 return state;
         }

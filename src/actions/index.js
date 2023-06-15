@@ -109,7 +109,7 @@ export function getRecipeDetail(id){    // obtiene detalles
     }
 }
 
-export function getIpClient(){      // obtiene IP cliente
+export function getIpClient(){      // obtiene IP clientes
     return async function(dispatch){
         try {
             var response = await axios.get(BACKEND_URL + '/ip', {});
@@ -122,5 +122,18 @@ export function getIpClient(){      // obtiene IP cliente
         } catch (error) {
             console.error(error);
         }
+    }
+}
+
+export function sendDataUser(payload){            // guarda user data en bd
+    return async function(dispatch) {
+        try{
+            var response = await axios.post(BACKEND_URL + '/user', payload);  
+            console.log(response)
+            return response; 
+        }
+        catch (error){
+            console.log(error)
+        } 
     }
 }

@@ -56,21 +56,12 @@
 }
 
 .homeButton{
-    /* color: black;
-    background-color: rgb(231, 218, 218);
-    font-size: 17px;
-    text-align: center;
-    padding: 10px 25px;
-    margin: 100px;
-    border-radius: 20px;
-    box-shadow: 3px 5px 1px rgb(3, 158, 185);
-    cursor: pointer; */
     color: rgb(0, 0, 0);
  
     font-size: 17px;
     text-align: center;
     padding: 10px 25px;
-    margin: 0px;
+    margin: 100px;
 
 	box-shadow: 3px 5px 1px rgb(135, 135, 135);
     border: none;
@@ -81,6 +72,5 @@
 }
 
 .homeButton:hover {
-    /* box-shadow: 1px 2px 1px rgb(3, 158, 185); */
     box-shadow: 1px 1px 1px rgb(135, 135, 135);
 }
